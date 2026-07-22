@@ -30,7 +30,9 @@ test('verify emp name with valid credentials11', async ({ page }) => {
   const workbook = new ExcelJS.Workbook();
 
   await workbook.xlsx.readFile(
-    path.join(__dirname, '../testdata/employees.xlsx')
+
+    path.join(__dirname, '../../testdata/employees.xlsx')
+   
   );
 
   const worksheet = workbook.getWorksheet(1);

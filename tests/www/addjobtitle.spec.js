@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
+import { faker } from '@faker-js/faker';
 
-test("Verify add job title", async ({page}) =>{
+test("Verify add job title7", async ({page}) =>{
 
  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
@@ -18,14 +19,14 @@ test("Verify add job title", async ({page}) =>{
 
  await page.getByRole('button', { name: 'Add' }).click()
 
- await page.locator("//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']").fill("SDET 1")
-
+ await page.getByRole('textbox').nth(1).click();
+ await page.getByRole('textbox').nth(1).fill(faker.person.jobTitle());
  await page.getByPlaceholder('Type description here').fill("Automation script writiing")
 
  await page.getByRole('textbox', { name: 'Type description here' }).fill("Notes only")
 
  await page.getByText('Save', { exact: true }).click()
 
- await expect(page).toHaveURL("https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewJobTitleList")
+ await expect(page).toHaveURL(/saveJobTitle/)
 
 })

@@ -56,9 +56,6 @@ test('verify pay grade with valid credentials', async ({ page }) => {
   await page.getByRole('listitem').filter({ hasText: /^Pay Grades$/ }).click();
   await page.getByRole('button', { name: ' Add' }).click();
   await page.locator('form').getByRole('textbox').click();
-  await page.locator('form').getByRole('textbox').press('CapsLock');
-  await page.locator('form').getByRole('textbox').fill('G');
-  await page.locator('form').getByRole('textbox').press('CapsLock');
   await page.locator('form').getByRole('textbox').fill('Grade - 5');
   await page.getByRole('button', { name: 'Save' }).click();
 });
@@ -168,7 +165,10 @@ test('verify work shift with invalid credentials', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Password' }).fill('admin123');
   await page.getByRole('button', { name: 'Login' }).click();
   await page.getByRole('link', { name: 'Admin' }).click();
-  await page.getByText('Job').click();
+ // await page.getByText('Job').click();
+
+  await page.locator("//span[normalize-space(text())='Job']").click()
+
   await page.getByRole('menuitem', { name: 'Work Shifts' }).click();
   await page.getByRole('button', { name: ' Add' }).click();
   await page.getByRole('textbox').nth(1).click();
