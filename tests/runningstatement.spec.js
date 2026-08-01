@@ -1,85 +1,85 @@
 
 
 
-//if (false) {
+// //if (false) {
 
-    //console.log("songa")
-    //console.log("ronga")
+//     //console.log("songa")
+//     //console.log("ronga")
 
-//}
-//else{
+// //}
+// //else{
 
-    //console.log("shitguy")
-//}
-
-
-let condition1 = false
-let condition2 = false
-let condition3 = false
-
-if(condition1){
-
-    console.log("maotherfucking gabru u r best")
-
-}
-  else if(condition2){
+//     //console.log("shitguy")
+// //}
 
 
-  console.log("singa")
-  console.log("ronga")
-  console.log("shitguy")
-  }
-   else if(condition3){
+// let condition1 = false
+// let condition2 = false
+// let condition3 = false
 
-   console.log("sami")
-   console.log("tanzir")
-   console.log("john")
+// if(condition1){
 
-}
-else{
-    console.log("gandu u r waste")
-}
+//     console.log("maotherfucking gabru u r best")
+
+// }
+//   else if(condition2){
 
 
-switch ("gante") {
-    case "songa":
-        console.log("lawde is songa")
-        break
-    case "ronga":
-        console.log("lawde is ronga")
-        break
-    case "gante":
-        console.log("lawde is gante")
-        break    
-    default:
-        console.log("lawde is something else")
-}
+//   console.log("singa")
+//   console.log("ronga")
+//   console.log("shitguy")
+//   }
+//    else if(condition3){
 
-function myFunction() {
-    console.log("gandu is myFunction")
-    console.log("gandu is myFunction")
-}
+//    console.log("sami")
+//    console.log("tanzir")
+//    console.log("john")
 
-myFunction()
+// }
+// else{
+//     console.log("gandu u r waste")
+// }
 
 
-function adder(x, y) {
-    console.log(x + y)
-    console.log(x - y)
-    console.log(x * y)
-    console.log(x / y)  
-}
+// switch ("gante") {
+//     case "songa":
+//         console.log("lawde is songa")
+//         break
+//     case "ronga":
+//         console.log("lawde is ronga")
+//         break
+//     case "gante":
+//         console.log("lawde is gante")
+//         break    
+//     default:
+//         console.log("lawde is something else")
+// }
 
-adder(10, 5)
+// function myFunction() {
+//     console.log("gandu is myFunction")
+//     console.log("gandu is myFunction")
+// }
 
-function substrrect(v1, v2) {
-    return v1-v2
-}
+// myFunction()
 
-console.log(substrrect(20, 5))
 
-function multiply(v1=10, v2=5) {
-    console.log(v1*v2)
-}
+// function adder(x, y) {
+//     console.log(x + y)
+//     console.log(x - y)
+//     console.log(x * y)
+//     console.log(x / y)  
+// }
 
-multiply("kotmari","shhunti")
+// adder(10, 5)
+
+// function substrrect(v1, v2) {
+//     return v1-v2
+// }
+
+// console.log(substrrect(20, 5))
+
+// function multiply(v1=10, v2=5) {
+//     console.log(v1*v2)
+// }
+
+// multiply("kotmari","shhunti")

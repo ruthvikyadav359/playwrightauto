@@ -23,20 +23,20 @@
 // console.log(userdetails)
 
 
-let jobtitles = {
-    title1: "Software Engineer",
-    title2: "Data Scientist",
-    title3: "Product Manager",
-    title4: "UX Designer"
+// let jobtitles = {
+//     title1: "Software Engineer",
+//     title2: "Data Scientist",
+//     title3: "Product Manager",
+//     title4: "UX Designer"
 
 
 
-}
+// }
 
-for (let value in jobtitles) {
+// for (let value in jobtitles) {
 
 
-    console.log("loop start ")
-    console.log(jobtitles[value])
-    console.log("loop end ")
-}
+//     console.log("loop start ")
+//     console.log(jobtitles[value])
+//     console.log("loop end ")
+// }
