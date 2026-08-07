@@ -11,7 +11,7 @@ import { test, expect } from '@playwright/test';
  for (const data in creds) {
 
 
-    test(`Verify login - ${data}`, async ({ page }) => {
+    test(`Verify login - ${data}`,{tags : "@smoke"}, async ({ page }) => {
 
         await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
         await page.getByRole('textbox', { name: 'Username' }).click();

@@ -1,13 +1,13 @@
 import { test, expect } from '@playwright/test';
 
-test('verify logo visible', async ({ page }) => {
+test('verify logo visi1ble', async ({ page }) => {
 
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await expect(page.getByRole('img', { name: 'company-branding' })).toBeVisible();
   
 });
 
-test('Verify login with valid credentials', async ({ page }) => {
+test('Verify login with valid credentials',{tag : "@smoke"}, async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await page.getByRole('textbox', { name: 'Username' }).click();
   await page.getByRole('textbox', { name: 'Username' }).press('CapsLock');
@@ -23,7 +23,7 @@ test('Verify login with valid credentials', async ({ page }) => {
 
 
 
-test.only('Verify login with valid username and invalid password', async ({ page }) => {
+test('Verify login with val2id username and invalid password', async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await page.getByRole('textbox', { name: 'Username' }).click();
   await page.getByRole('textbox', { name: 'Username' }).press('CapsLock');
@@ -39,7 +39,7 @@ test.only('Verify login with valid username and invalid password', async ({ page
   await expect(page.getByText('Invalid credentials')).toBeVisible();
 });
 
-test('Verify login without entering username and password', async ({ page }) => {
+test('Verify login without entering username and password',{tag : "@smoke"}, async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await page.getByRole('button', { name: 'Login' }).click();
   await expect(page.getByText('Required').first()).toBeVisible();
